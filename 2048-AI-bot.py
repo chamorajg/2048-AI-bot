@@ -48,7 +48,7 @@ def calc_clusteringscore(grid):
           if y < 0 and y > len(grid) :
             continue
           if grid[x][y] > 0 :
-            numofneighbors++
+            numofneighbors += 1
           score += abs(grid[x][y]-grid[i][j])
 
       clusteringscore += score/numofneighbors
